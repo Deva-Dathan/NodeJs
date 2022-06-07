@@ -1,0 +1,6 @@
+{
+  "dependencies": {
+    "readline-sync": "^1.4.10",
+    "upper-case": "^2.0.2"
+  }
+}
