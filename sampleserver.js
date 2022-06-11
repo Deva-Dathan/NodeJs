@@ -1,5 +1,4 @@
 /* Server Creating Code */
-/*
 var http=require('http')
 
 http.createServer(server).listen(7000)
@@ -7,13 +6,13 @@ http.createServer(server).listen(7000)
 function server(req,res){                   
     res.write('Hello World')
     res.end()
-} */
+} 
 
 /* To Kill the server press ctrl+c */
 
 /* Function in the above code can be written in another ways */
 
-/* 
+
 
 var http=require("http")
 http.createServer(function(req,res){
@@ -21,7 +20,7 @@ http.createServer(function(req,res){
     res.end()
 }).listen(7000)
 
-*/
+
 
 
 var http=require('http')
