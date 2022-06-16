@@ -87,7 +87,7 @@ http.createServer(function(req,res){
         })
     }else if(req.url==='/signup'){
         fs.readFile('sampleform.html',function(error,data){              /* Adding Html Form Page to Server Using Nodejs */
- /*           res.writeHead(200,{'Content-Type':'text/html'})
+ /*         res.writeHead(200,{'Content-Type':'text/html'})
             res.write(data)
             res.end()
         })
