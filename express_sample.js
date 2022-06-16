@@ -17,5 +17,6 @@ const path=require('path')
 
 app.get('/',(req,res)=>res.send('hello'))
 app.get('/signup',(req,res)=>res.sendFile(path.join(__dirname,'sampleform.html')))
+app.post('/signup',(req,res)=>res.send('Data Inserted'))  /* Passing data to server by post method */
 app.get('/about',(req,res)=>res.send('About Page'))
 app.listen(3000,()=>console.log('Server Started'))
