@@ -1,3 +1,4 @@
+const { reject } = require('promise');
 const promise=require('promise')
 
 function getName(){
@@ -17,6 +18,16 @@ function getMobile(){
 }
 
 
-promise.all([getName(),getMobile()]).then((dis)=>{
-    console.log(dis);
-})
+// promise.all([getName(),getMobile()]).then((dis)=>{
+//     console.log(dis);
+// })
+
+async function getUser(){
+    let name=await getName()
+    console.log(name);
+    let mobile=await getMobile()
+    console.log(mobile);
+
+}
+
+getUser()
