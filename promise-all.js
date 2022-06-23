@@ -18,9 +18,12 @@ function getMobile(){
 }
 
 
-// promise.all([getName(),getMobile()]).then((dis)=>{
-//     console.log(dis);
-// })
+promise.all([getName(),getMobile()]).then((dis)=>{
+    console.log(dis);
+})
+
+
+// Example for calling 2fns in single function
 
 async function getUser(){
     let name=await getName()
