@@ -1,4 +1,4 @@
-/* Build a prgm for adding 2 number,then multiply the sum and divide the product with 10 */
+/* Build a prgm for adding 2 number,then multiply the sum and divide the product with 10 Using callback function*/
 
 function add(num1,num2,callback)
 {
