@@ -57,12 +57,13 @@ function div(num1,num2){
 }
 add(10,20).then((sum)=>{
     console.log(sum);
-    multiply(sum,sum).then((product)=>{
-        console.log(product);
-        div(product,10).then((result=>{
-            console.log(result);
-        }))
-    })
-}).catch((err)=>{
+    return multiply(sum,sum)
+}).then((product)=>{
+    console.log(product);
+    return div(product,10)
+}).then((result)=>{
+    console.log(result);
+})
+.catch((err)=>{
     console.log(err);
 })
